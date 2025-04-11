@@ -16,12 +16,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 7px 30px 7px 30px;
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 100;
+}
+.logo{
+    height: 65px;
+    width: 121px;
+    background-image: url('../photos/gymlogo.png');
+    background-size: cover;
 }
 
 .nav-links {
@@ -35,13 +41,16 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #282727;
     font-weight: 600;
+    font-size: 18px;
     transition: color 0.3s ease;
+    transition: font-size 0.1s linear;
 }
 
 .nav-links a:hover {
-    color: #007bff;
+    color: #010408;
+    font-size: 21px;
 }
 
 .auth-buttons {
@@ -59,42 +68,58 @@ body {
 
 .login-btn {
     background-color: transparent;
-    border: 2px solid #007bff;
-    color: #007bff;
+    border: 2px solid #222629;
+    color: #090909;
 }
 
 .signup-btn {
-    background-color: #007bff;
+    background-color: #202325;
     color: white;
 }
 
 /* Hero Section */
 .hero-section {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 5rem 5%;
     background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+    background-image: url('../photos/mainimg.jpg');
+    background-size: cover;
+    height: 700px;
+    width: auto;
 }
 
 .hero-content {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.3);
+    padding: 0;
+    text-shadow: 
+    0 4px 8px rgba(0, 0, 0, 10),   
+    0 0 5px white;
 }
 
 .hero-content h1 {
     font-size: 3rem;
-    color: #333;
+    color:white;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1.3rem;
+    color: white;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .cta-btn {
-    background-color: #28a745;
-    color: white;
+    background-color: #f7f5f1;
+    color: rgb(14, 8, 8);
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .hero-image {
