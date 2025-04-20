@@ -31,7 +31,7 @@ html {
 .logo {
   height: 65px;
   width: 112px;
-  background-image: url('../photos/gymlogo12.png');
+  background-image: url('../static/photos/gymlogo.png');
   background-size: cover;
 }
 
@@ -119,7 +119,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 5rem 5%;
-  background-image: url('../photos/mainimg.jpg');
+  background-image: url('../static/photos/mainimg.jpg');
   background-size: cover;
   height: 700px;
   width: auto;
@@ -241,12 +241,12 @@ html {
 .c1-bg {
   height: 100%;
   width: 100%;
-  background-image: url('../photos/c1bg.jpg');
+  background-image: url('../static/photos/c1bg.jpg');
   background-size: cover;
 }
 
 .c2-bg {
-  background-image: url('../photos/c2bg.jpg');
+  background-image: url('../static/photos/c2bg.jpg');
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -255,28 +255,28 @@ html {
 .c3-bg {
   height: 100%;
   width: 100%;
-  background-image: url('../photos/c3bg.jpg');
+  background-image: url('../static/photos/c3bg.jpg');
   background-size: cover;
 }
 
 .c4-bg {
   height: 100%;
   width: 100%;
-  background-image: url('../photos/c4bg.jpg');
+  background-image: url('../static/photos/c4bg.jpg');
   background-size: cover;
 }
 
 .c5-bg {
   height: 100%;
   width: 100%;
-  background-image: url('../photos/c5bg.jpg');
+  background-image: url('../static/photos/c5bg.jpg');
   background-size: cover;
 }
 
 .c6-bg {
   height: 100%;
   width: 100%;
-  background-image: url('../photos/c6bg.jpg');
+  background-image: url('../static/photos/c6bg.jpg');
   background-size: cover;
 }
 

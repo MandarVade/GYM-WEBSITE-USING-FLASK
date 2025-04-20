@@ -12,15 +12,15 @@
 <body>
     <div class="navbar">
         <div>
-            <a href="index.html">
-                <img src="../photos/gymlogo12.png" class="logo">
+            <a href="/">
+                <img src="../static/photos/gymlogo.png" class="logo">
             </a>
         </div>
     </div>
     <!-- Signup Form Section -->
     <div class="auth-container">
         <div class="auth-form-wrapper">
-            <form class="auth-form signup-form" id="signupForm">
+            <form class="auth-form signup-form" id="signupForm" action="/signup" method="POST">
                 <h2>Create Your Account</h2>
                 <p>Start your fitness transformation today</p>
 
@@ -72,13 +72,13 @@
 
                 <div class="switch-auth">
                     Already have an account?
-                    <a href="login.html">Log In</a>
+                    <a href="/login">Log In</a>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="signup.js"></script>
+    <script src="../static/javasecipt/signup.js"></script>
 </body>
 
 </html>
