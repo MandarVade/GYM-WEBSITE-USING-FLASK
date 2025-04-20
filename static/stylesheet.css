@@ -44,7 +44,7 @@ html {
   margin: 0 15px;
 }
 
-.nav-links a {
+.nav-links i,a {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -53,10 +53,9 @@ html {
   transition: font-size 0.1s linear;
 }
 
-.nav-links a:hover {
+.nav-links i,a:hover {
   color: #97fb57;
   font-size: 21px;
-  text-decoration: underline 2px solid black;
 }
 
 .auth-buttons {

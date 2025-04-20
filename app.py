@@ -23,13 +23,13 @@ class Login(db.Model):
     def __repr__(self):
         return f"{self.full_name}, {self.email}, {self.password}"
 
-
-
-
-
 @app.route("/")
 def homepage():
     return render_template('index.html')
+
+@app.route("/userin")
+def userhome():
+    return render_template('userindex.html')
 
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
@@ -56,7 +56,7 @@ def login():
         user = Login.query.filter_by(email=email, password=password).first()
         
         if user:
-            return redirect('/')
+            return redirect('/userin')
         else:
             return "Invalid email or password", 401
 

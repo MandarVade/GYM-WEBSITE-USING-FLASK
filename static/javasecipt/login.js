@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             // Success - normally we'd just follow the redirect, but as a fallback:
-            window.location.href = '/';
+            window.location.href = '/userin';
         })
         .catch(error => {
             // Show error message
