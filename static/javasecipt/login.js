@@ -141,10 +141,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    const facebookButton = document.querySelector('.social-btn.facebook');
-    if (facebookButton) {
-        facebookButton.addEventListener('click', function() {
-            window.location.href = '/auth/facebook';
+    const adminlinker = document.querySelector('.switch-auth admin');
+    if (adminlinker) {
+        adminlinker.addEventListener('click', function() {
+            window.location.href = '/adminin';
         });
     }
 });

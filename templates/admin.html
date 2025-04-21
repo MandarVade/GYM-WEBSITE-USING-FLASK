@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Dashboard</title>
+    <meta name="description" content="Admin Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">
+            <img src="{{ url_for('static', filename='photos/gymlogo.png') }}" class="logo" alt="Gym Logo">
+        </a>
+        <h2>ADMIN PANEL</h2>
+    </div>
+
+    <main>
+        <section class="datapart">
+            {% if entries|length == 0 %}
+                <p>No entries found.</p>
+            {% else %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email ID</th>
+                            <th>Password</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for entry in entries %}
+                        <tr>
+                            <td>{{ entry.full_name }}</td>
+                            <td>{{ entry.email }}</td>
+                            <td>{{ entry.password }}</td>
+                            <td>{{ entry.date_created.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>
