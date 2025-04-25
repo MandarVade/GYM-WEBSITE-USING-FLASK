@@ -8,7 +8,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# ---------------------- Models ----------------------
+
+
 class Signup(db.Model):
     full_name = db.Column(db.String(50), nullable=False)
     email = db.Column(db.String(50), primary_key=True)
@@ -26,7 +27,8 @@ class Login(db.Model):
     def __repr__(self):
         return f"{self.email}"
 
-# ---------------------- Routes ----------------------
+
+
 @app.route("/")
 def homepage():
     return render_template('index.html')
@@ -67,6 +69,10 @@ def login():
 
     return render_template('login.html')
 
+@app.route("/payment")
+def makepay():
+    return render_template('payment.html')
+
 @app.route("/adminin")
 def adminlogin():
     return render_template('adminlogin.html')
@@ -76,6 +82,6 @@ def display():
     entries = Signup.query.all()
     return render_template('admin.html', entries=entries)
 
-# ---------------------- Main ----------------------
+
 if __name__ == "__main__":
     app.run(debug=True)

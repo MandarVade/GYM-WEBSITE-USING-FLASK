@@ -19,7 +19,7 @@
             <li><a href="#features">Benefits</a></li>
             <li><a href="#classes">Features</a></li>
             <li><a href="#members">Membership plans</a></li>
-            <li><a href="#review">Reviews</a></li>
+            <!-- <li><a href="#review">Reviews</a></li> -->
             <li><a href="#about">About Us</a></li>
         </ul>
         <div class="auth-buttons">
@@ -34,10 +34,12 @@
         <div class="hero-content">
             <h1>Transform Your Body</h1>
             <p>Professional Training. Personal Results.</p>
-            <button class="cta-btn">Start Your Journey</button>
+            <button class="cta-btn" onclick="window.location.href='/signup'">Start Your Journey</button>
         </div>
     </header>
 
+    {% block notice %}
+    {% endblock notice %}
     <!-- Features Section -->
     <section id="features" class="features-section">
         <h2>Why Choose Evershine Gym?</h2>
@@ -144,6 +146,8 @@
                         <i class="fa-solid fa-square-check"></i> Full gym access
                     </p>
                     <p>Charges every 6 months unless you cancel</p>
+                    {% block planbutton2 %}
+                    {% endblock planbutton2 %}
                 </div>
             </div>
             <div class="plan-card">
@@ -158,19 +162,9 @@
                         <i class="fa-solid fa-square-check"></i> Full gym access
                     </p>
                     <p>Charges every year unless you cancel</p>
+                    {% block planbutton3 %}
+                    {% endblock planbutton3 %}
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="review">
-        <h2>What Our Members Say</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial-card">
-                <p>"Fitness Hub changed my life. The trainers are amazing!"</p>
-                <h4>- Sarah M.</h4>
             </div>
         </div>
     </section>
@@ -181,7 +175,7 @@
             <div class="about-info">
                 <h2>About Fitness Hub</h2>
                 <p>
-                    Fitness Hub is a premier fitness and wellness center dedicated to helping individuals reach their
+                    Evershine Gym is a premier fitness and wellness center dedicated to helping individuals reach their
                     health and lifestyle goals.
                     With cutting-edge equipment, expert trainers, and a wide variety of fitness programs, we’re
                     committed to making fitness accessible, motivating, and effective for everyone.
@@ -194,9 +188,9 @@
             <div class="about-main">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> info@fitnesshub.com</p>
+                    <p><strong>Email:</strong> info@Evershine.com</p>
                     <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Address:</strong> 123 Fit Avenue, Wellness City, NY 10001, USA</p>
+                    <p><strong>Address:</strong> /////////////////////</p>
                 </div>
                 <div class="hours-info">
                     <h3>Business Hours</h3>
@@ -205,12 +199,12 @@
                 </div>
                 <div class="social-links">
                     <h3>Follow Us</h3>
-                    <a href="https://facebook.com/fitnesshub" class="fab fa-facebook" target="_blank"
+                    <a href="https://www.linkedin.com/in/mandar-vade-63721a277/" class="fab fa-facebook" target="_blank"
                         title="Facebook"></a>
-                    <a href="https://instagram.com/fitnesshub" class="fab fa-instagram" target="_blank"
+                    <a href="https://www.linkedin.com/in/mandar-vade-63721a277/" class="fab fa-instagram" target="_blank"
                         title="Instagram"></a>
-                    <a href="https://twitter.com/fitnesshub" class="fab fa-twitter" target="_blank" title="Twitter"></a>
-                    <a href="https://youtube.com/fitnesshub" class="fab fa-youtube" target="_blank" title="YouTube"></a>
+                    <a href="https://www.linkedin.com/in/mandar-vade-63721a277/" class="fab fa-twitter" target="_blank" title="Twitter"></a>
+                    <a href="https://www.linkedin.com/in/mandar-vade-63721a277/" class="fab fa-youtube" target="_blank" title="YouTube"></a>
                 </div>
             </div>
             <div class="copyright">

@@ -15,6 +15,102 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Notice Section Styling - Green & Black Theme */
+
+.notice-section {
+  background-color: #121212;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.notice-section h2 {
+  color: #4ade80;
+  font-size: 28px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.notice-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #4ade80;
+}
+
+.notice-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.notice-card {
+  background-color: #1e1e1e;
+  border-left: 4px solid #4ade80;
+  padding: 20px;
+  margin: 15px 0;
+  text-align: left;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.notice-card p {
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.notice-card strong {
+  color: #4ade80;
+}
+
+/* Animation for notice cards if you want to automatically cycle them */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.notice-card {
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Hover effect */
+.notice-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .notice-section {
+      padding: 30px 15px;
+  }
+  
+  .notice-section h2 {
+      font-size: 24px;
+  }
+  
+  .notice-card {
+      padding: 15px;
+  }
+  
+  .notice-card p {
+      font-size: 14px;
+  }
+}
 /* Navigation Bar */
 .navbar {
   display: flex;

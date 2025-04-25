@@ -3,6 +3,33 @@
 <button class="login-btn" onclick="window.location.href='/login'"><i class="fa-solid fa-user"></i></button>
 {% endblock navhead %}
 
+
+{% block notice %}
+<section class="notice-section" id="notice">
+    <h2>Important Notices</h2>
+    <div class="notice-slider">
+        <div class="notice-card">
+            <p>📢 <strong>Notice:</strong> The gym will be closed on <strong>April 30th</strong> for maintenance. We apologize for the inconvenience.</p>
+        </div>
+        <div class="notice-card">
+            <p>🎉 <strong>Happy Eid!</strong> Wishing all our members a joyful and peaceful celebration. Stay fit, stay happy!</p>
+        </div>
+        <div class="notice-card">
+            <p>📢 <strong>Update:</strong> New Zumba classes will begin from <strong>May 1st</strong> every evening at 6 PM. Join now!</p>
+        </div>
+    </div>
+</section>
+    
+{% endblock notice %}
+
 {% block planbutton %}
-<button class="plan-btn" onclick="window.location.href='#'">Enroll now</button>
+<button class="plan-btn" onclick="window.location.href='/payment'">Enroll now</button>
 {% endblock planbutton %}
+
+{% block planbutton2 %}
+<button class="plan-btn" onclick="window.location.href='/payment'">Enroll now</button>
+{% endblock planbutton2 %}
+
+{% block planbutton3 %}
+<button class="plan-btn" onclick="window.location.href='/payment'">Enroll now</button>
+{% endblock planbutton3 %}
